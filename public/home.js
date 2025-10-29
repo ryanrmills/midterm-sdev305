@@ -30,7 +30,7 @@ bookingForm.onsubmit = () => {
         valid = false;
     } 
 
-    if (travelerInput === '' || travelerInput <= 0 || typeof travelerInput !== "number"){
+    if (travelerInput === '' || travelerInput <= 0){
         document.getElementById('traveler-error').style.display = 'block';
         valid = false;
     }
