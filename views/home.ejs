@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookYourVacation</title>
+    <link href="home.css" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <div class="form-image-div">
+        <div class="image-banner">
+            <h1 class="banner-text">Book Your Dream Vacation</h1>
+        </div>
+
+        <form id="booking-form" action="submit-order" method="POST">
+            <div class="destination-div">
+                <label>Destination</label>
+                <select name="location" class="destination-select" id="destination-input">
+                    <option value="none">Choose a destination...</option>
+                    <option value="Bali, Indonesia">Bali, Indonesia</option>
+                    <optionv value="Paris, France">Paris, France</option>
+                    <option value="Tokyo, Japan">Tokyo, Japan</option>
+                    <option value="New York City, USA">New York City, USA</option>
+                    <option value="Maldives">Maldives</option>
+                </select>
+                <p id="destination-error" class="error">Please select a location</p>
+            </div>
+
+            <div class="input-section">
+                <div class="date-section">
+                    <label>Departure Date</label>
+                    <input name="datetime" type="date" id="date-input"/>
+                    <p id="departure-error" class="error">Please provide a proper date</p>
+                </div>
+
+                <div class="traveler-section">
+                    <label>Number of Travelers</label>
+                    <input name="num_travelers" type="number" id="num-travelers"/>
+                    <p id="traveler-error" class="error">Please provide number of travelers</p>
+                </div>
+            </div>
+
+            <button id="submit-button" type="submit">Find My Vacation</button>
+        </form>
+
+    </div>
+    <footer>
+        <a href="">Link to Github Repo</a>
+    </footer>
+</body>
+</html>
